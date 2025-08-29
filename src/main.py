@@ -1,14 +1,14 @@
+import math
 num1 = int(input('Enter the first number: '))
 num2 = int(input('Enter the second number: '))
  
-result = num1//num2
+result = math.floor(num1/num2)
 print(result)
 
-print('==============')
+import math
+mun3 = int(input('1st'))
+num4 = int(input("2nd"))
 
-num3 = int(input('enter your 1st numb: '))
-num4 = int(input("enter your 2nd numb: "))
+reault2 = math.floor(mun3/num4)
 
-result2 = num3//num4
-
-print(result2)
+print(reault2)
