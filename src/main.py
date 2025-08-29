@@ -1,14 +1,19 @@
-import math
-num1 = int(input('Enter the first number: '))
-num2 = int(input('Enter the second number: '))
- 
-result = math.floor(num1/num2)
-print(result)
+a = 5
+b = 7
+print('a, b', a, b)
+# swap these two
+temp = a
+a = b
+b = temp
+print('a, b', a, b)
 
-import math
-mun3 = int(input('1st'))
-num4 = int(input("2nd"))
+print('______________________________________')
 
-reault2 = math.floor(mun3/num4)
+x = 8
+y = 9
+print(f"x = {x}, y = {y}")
 
-print(reault2)
+temp = x
+x = y
+y = temp
+print(f"x = {x}, y = {y}")
