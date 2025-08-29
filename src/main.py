@@ -1,20 +1,16 @@
-a = 5
-b = 7
-print('a, b', a, b)
-# swap these two
-temp = a
-a = b
-b = temp
-print('a, b', a, b)
+x = 12
+y = 33
+print('x, y', x, y)
+#swap these two
+x, y = y, x
+print('x, y', x, y)
 
 print('''______________________________________
 ''')
 
-x = 8
-y = 9
-print(f"x = {x}, y = {y}")
+a = 3
+b = 4
+print(f'a = {a}, b= {b}')
 
-temp = x
-x = y
-y = temp
-print(f"x = {x}, y = {y}")
+a, b = b, a
+print(f'a = {a}, b= {b}')
