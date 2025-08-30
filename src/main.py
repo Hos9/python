@@ -1,17 +1,21 @@
-import string
 import random
+import string
  
-def generate_password(size):
-    all_chars = string.ascii_letters + string.digits + string.punctuation
-    password = ''
-    for char in range(size):
-        rand_char = random.choice(all_chars)
-        password = password + rand_char
-    return password
+first=input("Enter your First name: ")
+last=input("Enter your Last name: ")
+num=int(input("Enter your Password length: "))
  
-pass_len = int(input('How many characters in your password?'))
-new_password = generate_password(pass_len)
-print('Your new password: ', new_password)
+all_chars = string.ascii_letters+string.digits+string.punctuation
+ 
+email = first+ '.' + last + '@gmail.com'
+password = ''
+ 
+for i in range(num):
+   rand_char=random.choice(all_chars)
+   password = password + rand_char
+ 
+print("Your Gmail Id: "+ email)
+print("Your Password: "+ password)
 
 print('''
 ______________________________________
@@ -20,15 +24,19 @@ ______________________________________
 import string
 import random
 
-def g_p(a):
-  chars = string.ascii_letters + string.digits + string.punctuation
-  pw = ''
-  for i in range(a):
-    r_c = random.choice(chars)
-    pw = pw + r_c
-  return pw
-  
-p_l = int(input('pw length? '))
-n_pw = g_p(p_l)
-print('pw is: ', n_pw)
+fst = input('Your 1st name? ')
+snd = input('Your 2nd name')
+dig = int(input('pw length'))
 
+a_c = string.ascii_letters + string.digits + string.punctuation
+
+mail = fst + '.' + snd + '@gmail.com'
+pw = ''
+
+for i in range(dig):
+  r_c = random.choice(a_c)
+  pw = pw + r_c
+ 
+print(f'Email: {mail}')
+print(f'new pw: {pw}')
+  
